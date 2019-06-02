@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Leonardo Mareco</title>
+		<link href="css/projetos.css" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1"><!-- largura da pagina é igual a largura do dispositivo -->
+		<meta name="description" content="Artista visual">
+		<meta name="keywords" content="pintura, desenho, arte, artista, criatividade, cor">
+		<meta name="robots" content="index, follow">
+		<meta name="author" content="Kaio Mitsuharu Lino Aida, Vinicíus espindola, Lucas Sandim">
+		<link href="https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave" rel="stylesheet">
+
+		<link rel="stylesheet" href="imagens/icone.jpg">
+		<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js">/*icones*/</script>
+	</head>
+
+	<body>
+		<div class="todoBody">
+			<header class="cabecalho">
+				<button class="btn-menu"><i class="fas fa-bars fa-lg"></i></i></button>
+				<nav class="menu">
+					<a class="btn-close" href="#"><i class="fa fa-times"></i></a>
+					<ul>
+						<div class="pesquisa">
+							<input class="barraPesquisa" type="text" placeholder="Pesquisar" name="">
+							<input class="botaoPesquisar" type="submit" value="Buscar" name="">
+						</div>
+						<li class="home"><a href="index.html">HOME</a></li><!--classe home só vai existir no css da pagina home(home.css), pois o cabeçalho vai ter um css para ele, (cabeca-rodape.css)-->
+						<li class="Bibliografia"><a href="Bibliografia.html">Bibliografia</a></li>
+						<li class="contato"><a href="contato.html">CONTATO</a></li>
+						<li class="novidades"><a href="novidades.html">NOVIDADES</a></li>
+						<li class="projetos"><a href="projetos.html">PROJETOS</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<main>
+				<article>
+					<h1>PROJETOS</h1>
+					<p> oque deve possuir na pagina projetos?todos os projeto direto? ou por grupos de projetos? por data? tera uma area de pesquisa de projetos? oque mais?</p>
+
+					<p>Aqui é a pagina mais importante, aonde todos vao olhar</p>
+					<p>pretendo apresentar as obras de maneiras diferentes, um jeito para quem abrir com computado/desktop e outro jeito para quem abrir com SMARTFONE/mobile</p>
+					<p>quando essa pagina abrir vai estar organizada por data?</p>
+					<p>as obras estarão agrupadas?exemplo é as obras do Refugiados, que são varias obras com o mesmo tema</p>
+					<p>a apresentação dela vai ser normal? ou tem uma ideia, como movimento,</p>
+					<p> padrão? com titulo encima da obra e embaixo uma descrição, recomendo vc nao tentar explicar ou falar qual o objetivo da obra, talves seja mais interessante vc fazer o leior refletir junto com vc, contando uma historia fictícia por exemplo, levando o leitor a refletir sobre a imagem sem ele perceber </p>
+				</article>
+			</main>	
+				
+
+			<footer class="rodape">
+				<div class="social-icons">
+					<a href="#"><i class="fab fa-facebook"></i></a>
+					<a href="#"><i class="fab fa-twitter"></i></a>
+					<a href="#"><i class="fab fa-google"></i></a>
+					<a href="#"><i class="fab fa-instagram"></i></a>
+				</div>
+				<p class="copyright">
+					Copyright © Leonardo Mareco 2018. Todos os direitos reservados.
+				</p>
+			</footer>
+		</div>
+
+
+
+								<!-- J Q U E R Y -->
+
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script><!-- chama o pacote JQUERY para poder ser usado-->
+		<script >
+			/* usa o JQUERY, ao ser clicado o botao menu, mostra a lista de itens do menu */
+			$(".btn-menu").click(function(){/* quando o btn-menu for clicado, faz a função*/
+				$(".menu").show();/* mostra o menu */
+			})
+			/* usa o JQUERY, ao ser clicado o botao X, esconde/fecha a lista de itens do menu */
+			$(".btn-close").click(function(){/* quando o btn-close for clicado, faz a função */
+				$(".menu").hide();/* escorde/fecha o menu */
+			})
+		</script>
+	</body>
+</html>

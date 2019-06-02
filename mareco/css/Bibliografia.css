@@ -1,0 +1,239 @@
+*{	margin:0px; padding: 0px; font-size: 100%; border:none; outline: none; box-sizing: border-box;
+	
+  /*
+  	font-weight: 300;
+  	font-family: 'Alegreya', serif;
+	font-family: 'Dancing Script', cursive;*/
+}
+body{background-color: rgba(12, 12, 23, 0.89); margin: 0px;padding: 0px;}
+
+a{text-decoration: none;}
+
+ul{list-style: none;}
+
+img{max-width: 100%;}
+
+/*DIV que engloba todo body*/
+.todoBody{
+	background-color: #ddd;
+	max-width: 1460px;
+	min-width: 252px;
+	margin: 100%;
+	height: 100%;
+	/* centraliza */
+	display: block;
+    margin: 0 auto;
+}
+
+
+								/* C A B E Ç A L H O */
+.cabecalho{
+	width: 100%;
+	float: left;
+}
+
+/* B A R R A  DE  P E S Q U I S A */
+.pesquisa{
+	float: right;
+	width:100%;
+	margin:5%;
+	padding-left: 10%;
+}
+.barraPesquisa{
+	background-color: rgba(12, 12, 23, 0);/* fundo */
+	border-bottom-width: 2px;
+  	border-bottom-style: solid;
+    border-bottom-color: rgb(0, 119, 145);/* borda de baixo*/
+    transition: 0.3s;	
+    padding: 4%;
+    color: #aaa;
+    width:100%;
+    margin: 0 auto;
+}
+.barraPesquisa:focus{
+	background-color: rgba(12, 12, 23, 1);/* fundo */
+	color: #fff;
+}
+.botaoPesquisar{
+	padding: 2%;
+	background:#333;
+	
+}
+
+/* M E N U */
+.btn-menu{
+  /*background-color: #000;	 não esta sendo usado por causa do gradient*/
+	width: 50px;
+	height: 50px;
+	float: right;/* faz o botao flutuar a direita*/
+	text-align: center;
+	color: #fff;
+	border-radius: 50px;
+	cursor: pointer;
+	background: linear-gradient(to right, #000, #333);/* efeito de degrade*/
+}
+.btn-close{
+	font-size: 1.9em;
+	color:#f77;
+	cursor: pointer;
+	margin: 2% 3% 0 0;
+	float: right;
+}
+.menu{
+	display: none; /* menu nao vai ser aberto só de entrar no site*/
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-color: rgba(0,0,0,0.9);/* transparencia no fundo do menu*/
+	top: 0;
+	left: 0;
+}
+
+.menu ul{
+	width: 100%;
+	float: left;
+	text-align: center;/* centraliza os itens do menu*/
+}
+.menu li{
+	padding-left: 1.5%;/* espaçamento entre os itens do menu*/
+}
+.menu li a{
+	font-size: 2em;
+	color: #fff;
+	padding: 1.5% 3%;
+}
+.menu li:hover{
+	background: black;
+}
+
+
+											/* R O D A P E / F O O T E R */
+.rodape{
+	width: 100%;
+}
+.rodape p{
+	text-align: center;	
+}
+.social-icons{
+	width: 100%;
+	background-color: #171724;
+	font-size: 2.5em;
+	padding: 5%;
+	text-align: center;	/*centraliza os icones*/
+}
+.social-icons a{
+	color: rgba(255,255,255,0.7);/* cor branca um pouco transparente*/
+	padding-right: 3%; 
+}
+.social-icons a:hover{
+	color: rgb(255,255,255);
+	/*font-size: 1.1em; precisa ajustar*/
+}
+.social-icons a:last-child{
+	margin-right: 0; 
+}
+.copyright{
+	background-color: #0c0c17;
+	padding: 1% 0  1% 0;
+	/*color: rgba(0,0,0,0.79);*/
+	text-align: center;
+	color: #706f83;
+}
+
+
+/* ################# SMALL DEVICES - SMARTFONES #################*/
+
+@media screen and (min-width: 480px){
+	
+}
+/* ################# SMALL DEVICES - TABLET #################*/
+@media screen and (min-width: 768px){
+	
+}
+
+/* ################# SMALL DEVICES - MEDIUM DEVICES #################*/
+@media screen and (min-width: 960px){
+	
+}
+
+@media screen and (min-width: 1000px){
+	.pesquisa{
+		float: right; 
+		height: auto;
+		margin: auto;
+		padding: auto;
+		width: auto;
+		padding: auto;
+		
+	}
+	.barraPesquisa{
+		margin: auto;
+		padding: auto;
+		width: auto;
+		padding: auto;
+	}
+	.botaoPesquisar{
+		margin-left: 20px;
+		margin-right: 25px;
+		padding: 12px; 
+
+		border-bottom: 6px solid #007791;
+		border-bottom-width: 2px;
+  		border-bottom-style: solid;
+    	border-bottom-color: rgb(0, 119, 145);
+    	transition: 0.3s;
+	}
+	.btn-menu{ display: none;/* tira a tela de menu */}
+	.btn-close{ 
+		display: none;
+	}
+	.menu{
+		margin: 0 auto;
+		display: block !important;
+		position: static;
+		
+		}
+	.menu ul{
+		background-color: rgba(12, 12, 23, 0.89);
+		padding: 5px;
+	}
+	.menu li{
+		padding: 0;
+		float: left;/* deixa a lista na horizontal*/
+		padding-left: 1.5em;
+		padding-right: 1.5em;
+		padding-top: 15px; 
+	}
+	.menu li a{
+		font-size: 1.2em;
+		font-family: 'Finger Paint', cursive;font-family: 'Sedgwick Ave', cursive;
+		color: rgba(255,255,255,0.7);/* cor branca um pouco transparente*/	
+	}
+	.menu li a:hover{
+		color: #fff;
+		
+	}
+	.menu li:hover{/* BORDA */
+		background:	none;
+
+		border-bottom: 6px solid #007791;
+		border-bottom-width: 2px;
+  		border-bottom-style: solid;
+    	border-bottom-color: rgb(0, 119, 145);
+    	transition: 0.3s;
+	}
+	.menu li a:hover{
+	}
+
+
+}
+
+@media screen and (min-width: 1000px){/*para cada CSS, nesse caso contato*/
+	/* ITEM DO MENU SOBRE */
+	.Bibliografia{
+		border-bottom: 6px solid #000091;
+		border-bottom-width: 2px;
+		border-bottom-style: solid;
+		border-bottom-color: rgb(0, 119, 145);
+	}
+}

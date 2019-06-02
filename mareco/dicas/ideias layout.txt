@@ -1,0 +1,17 @@
+cabeçalho
+	imagem/logo
+	nome
+	menu no desktop
+	icone do meno em mobile
+	pesquisa
+slide 
+	com oque?
+
+oque vai conter na pagina HOME, CONTATO,PROJETOS, PINTURAS
+
+comentario na imagens? se sim, aparecendo a todos ou só para o artista
+
+
+Coisas que repetem como cabeçalho e rodapé serão uma pagina a parte, sendo incluida em cada pagina com include do PHP
+
+ Como fazer em JS ou sei la, para que cada um pedaço do meu CSS funciona só em um determinada pagina, por exemplo, a marca fixa azul no menu, apareça de acordo com a pagina aberta
